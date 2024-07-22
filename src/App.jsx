@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css'; // Importing the CSS file for styling
 
 const CountdownTimer = () => {
-  const targetDate = new Date('2026-02-15T00:00:00Z');
+  const targetDate = new Date('2026-03-14T00:00:00Z');
 
   const calculateTimeRemaining = () => {
     const now = new Date();
