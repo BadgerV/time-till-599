@@ -28,30 +28,32 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="countdown-container">
-      <div className="countdown-timer">
-        <div className="time-section">
-          <span className="time-value">{timeRemaining.days}</span>
+    <div className="body">
+      <div className="countdown-container">
+        <div className="countdown-timer">
+          <div className="time-section">
+            <span className="time-value">{timeRemaining.days}</span>
+
+          </div>
+          <span className='icon'>:</span>
+          <div className="time-section">
+            <span className="time-value">{timeRemaining.hours}</span>
+
+          </div>
+          <span className='icon'>:</span>
+
+          <div className="time-section">
+            <span className="time-value">{timeRemaining.minutes}</span>
+
+          </div>
+          <span className='icon'>:</span>
+
+          <div className="time-section">
+            <span className="time-value">{timeRemaining.seconds}</span>
+
+          </div>
 
         </div>
-        <span className='icon'>:</span>
-        <div className="time-section">
-          <span className="time-value">{timeRemaining.hours}</span>
-
-        </div>
-        <span className='icon'>:</span>
-
-        <div className="time-section">
-          <span className="time-value">{timeRemaining.minutes}</span>
-
-        </div>
-        <span className='icon'>:</span>
-
-        <div className="time-section">
-          <span className="time-value">{timeRemaining.seconds}</span>
-
-        </div>
-
       </div>
     </div>
   );

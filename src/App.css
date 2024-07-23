@@ -1,68 +1,30 @@
-/* CountdownTimer.css */
-body {
-  margin: 0;
+.countdown-container {
+  background: radial-gradient(circle, #f5f7fa, #c3cfe2);
   font-family: 'Digital-7', sans-serif;
-  /* You can use a digital-like font here */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  max-width: 100%;
-  overflow: hidden;
-  margin: 2rem;
-  background: radial-gradient(circle, #f5f7fa, #c3cfe2);
+  width: 100vw;
+  outline: 1px solid red;
+
 }
 
-.icon {
-  font-size: 3rem;
-}
-
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.body {
+  width: 100%;
 }
 
 .countdown-timer {
+  width: min(500px, 90%);
   display: flex;
-  gap: 2rem;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  color: #fff;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.time-section {}
 
+span {
+  font-size: clamp(1.5rem, 2.5vw, 3rem); /* Adjust font size based on viewport width */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.575);
 
-.time-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.time-value {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.time-label {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #ddd;
-}
-
-
-@media (max-width : 532px) {
-  .time-value {
-    font-size: 1rem;
-  }
-
-  .icon {
-    font-size: 1rem;
-  }
-  
 }
