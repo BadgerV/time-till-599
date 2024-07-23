@@ -7,6 +7,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 2rem;
   background: radial-gradient(circle, #f5f7fa, #c3cfe2);
 }
 
@@ -50,4 +53,16 @@ body {
   font-size: 0.9rem;
   font-weight: bold;
   color: #ddd;
+}
+
+
+@media (max-width : 532px) {
+  .time-value {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+  
 }
